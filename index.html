@@ -21,15 +21,24 @@
         Git terminal kullanımını gördük Artık git komutlarını öğrenmeye başlayacağız Öncelikle gite  bir kullanıcı adı ve maili yapilandiriyorum . Böylelikle yapilan degissikliklerin kim tarafından yapıldığını görebilirim.  bunun için kullanmam
          gereken komutlar git konfig - Global user.name “..” sonrasında git config--global User e-mail diyerek oraya e-mail'imi hesabıma giriyorum.
          Şimdi git status adlı bir komut kullanacağız bu komutun amacı nedir bu komut bana git deposunun güncel durumunu gösterir git ile bağlantısı kuruldu mu kurulmadı mı kurulduysa Hangi komitler atıldı hangi branch üzerindeyim bana bunu gösterir
-          git status çalıştırıldıktan sonra git ile bağlantısı yok derse git init komutunu kullanarak dosyamı git ile bağlarım. Şimdi burada kurmak istediğim projeden bahsediyorum  biz bir web sitesi yapmak istiyoruz bu web sitesi için bir html dosyası 
-          oluşturuyorum tekrardan ve bu html dosyasının içerisine giriyorum klasörümde html dosyanın içerisine eklemeler yapıyorum kaydediyorum ve tekrar terminalime geliyorum terminaline gelip git status komutunu tekrar çalıştırdığımda bana commit edilmeyen 
-          değişiklikler olduğunu söyleyecek ve bana git add komutunu kullanmam gerektiğini söyleyecek .buradan sonra ben git add . Komutunu kullanıyorum klasörümü ekliyorum sonrasında git commit kullanarak commit mesajımı ekliyorum ve yaptığım komiteleri listelenmesi 
-          için git log komutunu kullanıyorum git log komutunu kullandığımda bana kim tarafından hangi süre zarfı içerisinde hangi branch içerisinde hangi kommitlenin eklendiğini bana gösteriyor. 
-          Tekrar html dosyama gelip değişiklik yapıyorum kaydediyorum terminalime gelip git status diyorum git add . Ve git commit diyorum mesajımı ekleyip git log ile commitlerimin hepsini görüyorum
-          Şimdi ben görüldüğü üzere master adlı bir branch içerisindeyim  git branch komutunu kullanarak ben kaç tane branchim olduğunu ve hangisi içerisinde olduğumu görüyorum  sadece master çıkıyor
-           yani bir tane master branch in var ve onun içerisindesin diyor ben git branch feet diyerek yeni bir branchş oluşturuyorum feat isminde ve git switch feat diyerek içinde bulunduğum branchi 
-           değiştiriyorum artık feat içerisindeyim  tekrar html klasörüme gelip değişiklik yapıyorum  kaydediyorum git status çalıştırıyorum ve   bana eklenmeyen şeyler olduğunu söylüyor git add . 
-           diyorum git commit ile mesajimi ekliyorum sonrasında git log çalıştırıyorum git logu çalıştırdığımda bana son commitin feat adlı bir branchta yapıldığını söylüyor. Genel olarak başlangıç
-            komutlarımız bunlar şimdi de github ile Git nasıl banlanır bunu görelim.</h1>
+         git status çalıştırıldıktan sonra git ile bağlantısı yok derse git init komutunu kullanarak dosyamı git ile bağlarım. Şimdi burada kurmak istediğim projeden bahsediyorum  biz bir web sitesi yapmak istiyoruz bu web sitesi için bir html dosyası 
+        oluşturuyorum tekrardan ve bu html dosyasının içerisine giriyorum klasörümde html dosyanın içerisine eklemeler yapıyorum kaydediyorum ve tekrar terminalime geliyorum terminaline gelip git status komutunu tekrar çalıştırdığımda bana commit edilmeyen 
+        değişiklikler olduğunu söyleyecek ve bana git add komutunu kullanmam gerektiğini söyleyecek .buradan sonra ben git add . Komutunu kullanıyorum klasörümü ekliyorum sonrasında git commit kullanarak commit mesajımı ekliyorum ve yaptığım komiteleri listelenmesi 
+        için git log komutunu kullanıyorum git log komutunu kullandığımda bana kim tarafından hangi süre zarfı içerisinde hangi branch içerisinde hangi kommitlenin eklendiğini bana gösteriyor. 
+        Tekrar html dosyama gelip değişiklik yapıyorum kaydediyorum terminalime gelip git status diyorum git add . Ve git commit diyorum mesajımı ekleyip git log ile commitlerimin hepsini görüyorum
+        Şimdi ben görüldüğü üzere master adlı bir branch içerisindeyim  git branch komutunu kullanarak ben kaç tane branchim olduğunu ve hangisi içerisinde olduğumu görüyorum  sadece master çıkıyor
+        yani bir tane master branch in var ve onun içerisindesin diyor ben git branch feet diyerek yeni bir branchş oluşturuyorum feat isminde ve git switch feat diyerek içinde bulunduğum branchi 
+        değiştiriyorum artık feat içerisindeyim  tekrar html klasörüme gelip değişiklik yapıyorum  kaydediyorum git status çalıştırıyorum ve   bana eklenmeyen şeyler olduğunu söylüyor git add . 
+        diyorum git commit ile mesajimi ekliyorum sonrasında git log çalıştırıyorum git logu çalıştırdığımda bana son commitin feat adlı bir branchta yapıldığını söylüyor. Genel olarak başlangıç
+        komutlarımız bunlar şimdi de github ile Git nasıl banlanır bunu görelim.
+        Öncelikle github nedir Buna bakalım githup Web tabanlı bir git deposu ve proje yönetim platformudur geliştiricilerin kodlarını paylaşmalarına işbirliği yapmalarına ve projeleri takip etmelerine 
+        olanak tanıyan bir platform. bizde projemizi github ile birleştirmek bağlamak istiyoruz bunun için öncelikle önceden oluşturmuş olduğumuz github hesabımiza giriyorum sizin github hesabininn yoksa
+        istenilen bilgileri girerek bir hesap olusturabilirsiniz. Burda repositories kısmına geliyorum new diyerek yeni bir repo oluşturuyorum bu repoma bir isim vermemi istiyor isteğe bağlı tanım ya da
+        açıklama giriyorum . Reponun herkese açık mi gizli mi olmasını istediğimi seçiyorum  biz bu projeyi public olarak oluşturucaz. Isteğe bağlı readme dosyası ekleyebiliriz lisansı seçebiliriz ama biz 
+        seçmeden devam edicez. Create repository diyoruz ve repomuz oluşmuş oluyor. Bu sayfada bana github i git ile bağlarken kullanacağım komutları veriyor sırayla dediklerini yapıyorum git remote add origin .... diyorum
+        sonrasında git push -u origin master diyorum. Ben önceden kayıt olduğum için github ile dosyam direkt bağlandı ama siz kayıt olmadıysanız sizden şifre ile giriş yapmanızı isteyecektir. Şimdi tekrardan github hesabıma 
+        geliyorum ve repomun içine girdiğimde oluşturduğum dosyaları ve commitlerimi görüyorum.  Html dosyam içerisine girip tekrar bir değişiklik yapiyoruma git add . Git commit diyorum github sayfama gelip guncelliylrim ama 
+        bu değişikliklerin kitaba yansımadığını görüyorum değişikliklerimi kitaba yansıması için de ayrı bir komut kullanmam gerekiyor terminalime geliyorum git push -u  orijin Master diyorum Tekrar kitap hesabıma gelip sayfamı
+         yenilediğimde yaptığım değişikliğin kitaba yansıdığını görmus oluyorum.</h1>
 </body>
 </html>
